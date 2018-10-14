@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ClShop</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5">
+  </head>
+
+  <body>
+    
+    <header>
+      <div class="header-top navbar-inverse"　>
+        <%= mail_to 'cooklovertokyo@gmail.com', :class => "text-light mail" do %>
+          <span class="mail fas fa-envelope"> cooklovertokyo@gmail.com</span>
+          
+        <% end %>
+      </div>
+      <div class="clearfix">
+        <a class="navbar-brand" href="https://cooklover.jp/" title="Cook Lover"><img class="icon" src="/image/cropped-icon.jpg" alt="Cook Lover"></a>
+        <i id="open_menu" class="fas fa-bars shown"></i>
+        <i id="close_menu" class="fas fa-times"></i>
+      </div>
+      <div id="menu">
+          <!--<i id="close_menu" class="fas fa-times"></i>-->
+          <div class="header-menus text-dark">
+                <%= link_to "HOME", "https://cooklover.jp/", :class => "text-muted menu" %>
+                <%= link_to "DELI", "https://cooklover.jp/deli/", :class => "text-muted menu" %>
+                <%= link_to "RECIPE", "https://cooklover.jp/recipe/", :class => "text-muted menu" %>
+                <%= link_to "BOOKS", "https://cooklover.jp/book/", :class => "text-muted menu" %>
+                <%= link_to "VEGETABLS", "https://cooklover.jp/vegetabls/", :class => "text-muted menu" %>
+                <%= link_to "NEWS", "https://cooklover.jp/news/", :class => "text-muted menu" %>
+                <%= link_to "SHOP", "/", :class => "text-muted menu" %>
+          </div>    
+      </div>
+    </header>
+    
+    
+    <div class="top-image">
+      <%= image_tag("/top_new_2.jpg", :class => "top-image") %>
+    </div>
+
+    <div id="yield" class="bg-dark text-white">
+     <%= yield %>
+    </div>
+          <script>
+          (function() {
+            'use strict';
+      
+            var openMenu = document.getElementById('open_menu');
+            var closeMenu = document.getElementById('close_menu');
+            var menu = document.getElementById('menu');
+
+            openMenu.addEventListener('click', function() {
+              menu.classList.add('shown');
+              closeMenu.classList.add('shown');
+              openMenu.classList.remove('shown');
+            });
+      
+            closeMenu.addEventListener('click', function() {
+              menu.classList.remove('shown');
+              closeMenu.classList.add('shown');
+              openMenu.classList.add('shown');
+            });
+          })();
+      </script>
+  </body>
+</html>

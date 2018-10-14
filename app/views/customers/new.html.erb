@@ -1,0 +1,55 @@
+<h2>購入者情報登録</h2>
+<%= form_tag("carts/confirm", :class => "cust-detail") do  %>
+
+<table id="cust-detail-table" border="2">
+  <tr>
+    <th>苗字</th>
+    <th><input type="text" name="last_name" id="last_name" required /></th>
+  </tr>
+  <tr>
+    <td>名前</td>
+    <td><input type="text" name="first_name" id="first_name" /></td>
+  </tr>
+  <tr>
+    <td>苗字（カナ）</td>
+    <td><input type="text" name="last_kana" id="last_kana" /></td>
+  </tr>
+  <tr>
+    <td>名前（カナ）</td>
+    <td><input type="text" name="first_kana" id="first_kana" /></td>
+  </tr>
+  <tr>
+    <td>メール</td>
+    <td><input type="text" name="email" id="email" /></td>
+  </tr>
+  <tr>
+    <td>電話</td>
+    <td><input type="text" name="phone" id="phone" /></td>
+  </tr>
+  <tr>
+    <td>郵便番号</td>
+    <td><input type="text" name="zip1" id="zip1" size="3" />-
+        <input type="text" name="zip2" id="zip2" size="4" />
+    </td>
+  </tr>
+  <tr>
+    <td>都道府県</td>
+    <td><input type="text" name="pref" id="pref" /></td>
+  </tr>
+  <tr>
+    <td>市町村区</td>
+    <td><input type="text" name="city" id="city" /></td>
+  </tr>
+  <tr>
+    <td>住所１</td>
+    <td><input type="text" name="addr1" id="addr1" /></td>
+  </tr>
+  <tr>
+    <td>住所２</td>
+    <td><input type="text" name="addr2" id="addr2" /></td>
+  </tr>
+</table>
+
+<input type="submit" name="submit" id="cust-input-submit" value="登録する"/>
+
+<% end %>

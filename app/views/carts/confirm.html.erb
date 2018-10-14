@@ -1,0 +1,32 @@
+<%= form_tag("create") do  %>
+
+<div class="field">
+  苗字:<%= @last_name %>
+  名前:<%= @first_name %>
+  苗字（カナ）:<%= @last_kana %>
+  名前（カナ）:<%= @first_kana %>
+  メール:<%= @email %>
+  電話:<%= @phone %>
+  郵便番号:<%= @zip1 %>-<%= @zip2 %>
+  都道府県:<%= @pref %>
+  市町村区:<%= @city %>
+  住所１:<%= @addr1 %>
+  住所２:<%= @addr2 %>
+  
+  <input type="hidden" name="last_name" value="<%= @last_name %>" >
+  <input type="hidden" name="first_name" value="<%= @first_name %>" >
+  <input type="hidden" name="last_kana" value="<%= @last_kana %>" >
+  <input type="hidden" name="first_kana" value="<%= @first_kana %>" >
+  <input type="hidden" name="email" value="<%= @email %>" >
+  <input type="hidden" name="phone" value="<%= @phone %>" >
+  <input type="hidden" name="zip1" value="<%= @zip1 %>" >
+  <input type="hidden" name="zip2" value="<%= @zip2 %>" >
+  <input type="hidden" name="pref" value="<%= @pref %>" >
+  <input type="hidden" name="city" value="<%= @city %>">
+  <input type="hidden" name="addr1" value="<%= @addr1 %>" >
+  <input type="hidden" name="addr2" value="<%= @addr2 %>" >
+  
+  <input type="submit" name="submit" id="submit" value="注文する"/>
+</div>
+
+<% end %>

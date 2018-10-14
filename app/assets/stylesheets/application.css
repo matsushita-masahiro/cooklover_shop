@@ -1,0 +1,243 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+ /*  830 以上のcss  */
+ 
+body {
+     font-family: ABeeZee;
+     /*color: black;*/
+ }
+ 
+ 
+.fa-envelope:hover{
+    transition: 0.4s ;
+    color: darkgray;
+    text-decoration: none;
+}
+
+.fa-envelope {
+    transform: scale(1.4, 1.5);
+    font-size: 8px;
+    color: #ffffff;
+}
+ 
+.mail {
+    padding-top: 9px;
+    width: 680px;
+    height: 40px;
+    margin: 0 auto;
+ }
+ 
+ .header-top {
+     height: 40px;
+     background: #333333;
+ }
+ 
+ .navbar-brand {
+     padding-top: 10px;
+     width: 100%;
+     margin-bottom: 22px;
+ }
+ 
+ .icon{
+     margin: 0 auto;
+     width: 51px;
+     height: 50px;
+ }
+
+ul {
+    list-style: none；
+}
+
+.header-menus a:hover{
+    transition: 0.5s ;
+    color: #ff1493;
+    text-decoration: none;
+}
+
+.menu {
+    
+    margin: 20px;
+    display: inline-block;
+}
+
+
+
+.header-menus {
+    /*margin-top: 217px;*/
+      background: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 11px;
+      color: white;
+}
+
+.top-image {
+    /*background: black;*/
+    margin-top: 2.5px;
+    width: 100%;
+    height: auto;
+}
+
+
+@media (min-width: 830px) {
+    
+     #open_menu, #close_menu {
+     display: none;
+ }
+    
+}
+
+
+
+/* 830以下の場合のcss */
+
+@media (max-width: 830px) {
+    
+    
+    
+    body {
+        width: 100%;
+    }
+
+    
+     .header-top {
+         width: 100%;
+         height: 80px;
+         background: #333333;
+     }
+     
+     .fa-envelope {
+        transform: scale(1.4, 1.5);
+        font-size: 18px;
+        color: #ffffff;
+    }
+     
+     .mail {
+        text-align: center;
+        padding-top: 30px;
+        height: 40px;
+     }
+     
+    
+        
+     .icon{
+         margin-left: 15px;
+         margin-top: 10px;
+         float: left;
+         width: 102px;
+         height: 100px;
+     }
+     
+     .header-menus {
+         /*display: block;*/
+     }
+     
+     .menu {
+        padding: 15px;
+        display: block;
+    }
+    
+    #close_menu {
+        display: none;
+    }
+     
+     
+     #open_menu {
+         /*font-weight: lighter;*/
+         transform: scale(2, 1.7);
+         font-size: 24px;
+         float: right;
+         margin-top: -75px;
+         margin-right: 60px;
+     }
+     
+    #close_menu.shown {
+         /*font-weight: lighter;*/
+         color: red;
+         transform: scale(2, 1.7);
+         font-size: 24px;
+         float: right;
+         margin-top: -75px;
+         margin-right: 60px;
+     }
+     
+     .navbar-brand {
+         padding-bottom: 127px; 
+         margin-bottom: 0px;
+     }
+
+    
+     
+    #menu.shown {
+      display: block;
+    }
+    
+         
+    #open_menu {
+      /*display: none;*/
+    }    
+    
+    #open_menu .shown {
+      display: none;
+    }
+
+    
+    #menu {
+      position: absolute;
+      top: 500;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.9);
+      color: #fff;
+      display: none;
+    }
+    
+    .menu {
+        text-align: left;
+    }
+    
+   .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+   }
+   
+   a.fa-envelope {
+       display: block;
+   }
+   
+   input.order-q {
+       width: 30px;
+   }
+   
+   table th.shosai {
+       width: 200px;
+   }
+   
+   table th.kingaku {
+       width: 100px;
+   }
+   
+   table th.chumonsuu {
+       width: 100px;
+   }
+   
+
+
+
+}  
+/* max-width end*/

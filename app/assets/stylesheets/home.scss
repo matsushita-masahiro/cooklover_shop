@@ -1,0 +1,67 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+.top-link {
+    // margin: 30px;
+    // border: 1px solid white;
+    // border-radius: 10px;
+    // padding: 20px;
+    // font-size: 30px;
+}
+
+a.top-link  {
+    // font-family: 'arial unicode ms';
+    display: inline-block;
+    color:#000000;
+    background:#696969;
+    border-style:outset;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 20px;
+    color: white;
+}
+
+
+.link-list {
+    text-align: center;
+    background: black;
+}
+
+
+#login {
+    text-align: center;
+}
+
+#signup {
+    text-align: center;
+}
+
+#yield {
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+    background: black;
+}
+
+// h2 {
+//     text-align: center;
+//     margin-top: 0px;
+//     padding-top: 30px;
+// }
+
+input.login {
+    color: white;
+    background: gray;
+}
+
+input.signup {
+    color: white;
+    background: gray;
+}
+

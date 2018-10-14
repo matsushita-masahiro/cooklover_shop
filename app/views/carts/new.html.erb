@@ -1,0 +1,36 @@
+<% if session[:user_id].present? %>
+    <%= form_tag("carts/create") %>
+<% else %>
+    <%= form_tag(new_customer_path) %>
+<% end %>
+
+<h2 id="cart-new">商品リスト</h2>
+
+    
+<table id="order-table" border="2">
+  <tr>
+    <th>商品</th>
+    <th>商品</th>
+    <th class="shosai">詳細</th>
+    <th class="kingaku">金額</th>
+    <th class="chumonsuu">注文数</th>
+  </tr>
+<% cnt = 0 %>  
+<% @products.each do |product| %>
+<% cnt += 1 %>
+    <div class="item">  
+      <tr>
+        <td><%= image_tag("/image/#{product.product_image}", :class => "prod_image", :width => 100, :height => 100) %></td>
+        <td><%= "#{product.name}"  %></td>
+        <td><%= "#{product.info}"  %></td>
+        <td><%= "#{product.price}"  %></td>
+        <td class="order-q"><input type="number" class="order-q" id="<%= "number[#{product.id}]" %>" size="3" maxlength="3"></td>
+
+      </tr>
+    </div>　　
+<% end %>
+
+</table>
+
+<input id="order-submit" type="submit" name="submit" value="カートに入れる" >
+

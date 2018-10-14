@@ -1,0 +1,37 @@
+// Place all the styles related to the customers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+form.cust-detail {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-top: 0px;
+    padding: 30px;
+    text-align: center;
+}
+
+table#cust-detail-table {
+    // display: block;
+    // margin: 0 auto;
+}
+
+#cust-detail-table {
+    margin: 0 auto;
+    width: 70%;
+}
+
+input#cust-input-submit {
+    display: block;
+    margin: 30px auto;
+    color: black;
+}
+
+table input {
+    size: 3;
+    color: black;
+}
+

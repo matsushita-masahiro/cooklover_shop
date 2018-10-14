@@ -1,0 +1,40 @@
+// Place all the styles related to the carts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h2#cart-new {
+    padding-top: 70px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#order-table {
+    margin: 0 auto;
+    width: 70%;
+}
+
+table th {/*table内のthに対して*/
+  text-align: center;/*上下左右10pxずつ*/
+  padding: 10px;
+}
+
+input#order-submit {
+    display: block;
+    margin: 30px auto;
+    color: black;
+}
+
+td {
+    text-align: center;
+}
+
+.order-q {
+    size: 3;
+    color: black;
+}
+
+
+.prod_image {
+    margin: 10px;
+}
+

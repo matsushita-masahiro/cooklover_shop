@@ -1,0 +1,7 @@
+<%= @cart.id %>
+<% @cart_details.each do |cart_detail| %>
+<%= cart_detail.product_id %>
+<%= cart_detail.quantity %>
+<%= cart_detail.sell_price %>
+<%= cart_detail.subtotal %>
+<% end %>

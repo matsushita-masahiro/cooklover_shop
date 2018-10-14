@@ -1,0 +1,17 @@
+<div class="link-list">
+    
+    <section>
+       <%= link_to "登録して購入", new_user_registration_path, :class => "top-link" %>
+    </section>
+    <section>
+       <%= link_to "購入のみ", new_cart_path, :class => "top-link" %>
+    </section>
+    <section>
+       <%= link_to "ログイン", new_user_session_path, :class => "top-link" %>
+    </section>
+    <section>
+       <%= link_to "ログアウト", destroy_user_session_path, :method => "delete", :class => "top-link" %>
+    </section>
+
+</div>
+
