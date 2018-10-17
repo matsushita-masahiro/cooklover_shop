@@ -24,7 +24,7 @@
         <td><%= "#{product.name}"  %></td>
         <td><%= "#{product.info}"  %></td>
         <td><%= "#{product.price}"  %></td>
-        <td class="order-q"><input type="number" class="order-q" id="<%= "number[#{product.id}]" %>" size="3" maxlength="3"></td>
+        <td class="order-q"><input type="number" class="order-q" value=0 name="<%= "item[][#{product.id}]" %>" size="3" maxlength="3"></td>
 
       </tr>
     </div>　　

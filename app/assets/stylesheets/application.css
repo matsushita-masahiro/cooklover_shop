@@ -16,6 +16,18 @@
  
  /*  830 以上のcss  */
  
+#user_password {
+    color: black;
+}
+
+#user_password_confirmation {
+    color: black;
+}
+
+#user_email {
+    color: black;
+}
+ 
 body {
      font-family: ABeeZee;
      /*color: black;*/
@@ -106,6 +118,19 @@ ul {
 /* 830以下の場合のcss */
 
 @media (max-width: 830px) {
+    
+     
+    #user_password {
+        color: black;
+    }
+    
+    #user_password_confirmation {
+        color: black;
+    }
+    
+    #user_email {
+        color: black;
+    }
     
     
     

@@ -6,11 +6,12 @@ Rails.application.routes.draw do
   # end
 
   post 'customers/new' => 'customers#new'
+  post 'carts/confirm' => 'carts#confirm'
+  post 'carts/saveorder' => 'carts#saveorder'
 
   resources :posts , :only => [:show, :index, :new, :create, :edit, :update, :destroy]
   resources :customers   , :only => [:show, :index, :new, :create, :edit, :update, :destroy]
   resources :products
-  post 'carts/confirm' => 'carts#confirm'
   resources :carts
   
   root 'home#top'

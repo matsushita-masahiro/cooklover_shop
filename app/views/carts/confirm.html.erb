@@ -1,6 +1,14 @@
-<%= form_tag("create") do  %>
+<%= form_tag("saveorder") do  %>
 
-<div class="field">
+<div class="order_info">
+  <% session[:order_quantity].each do |prod_id,order_q| %>
+  <%= "製品：#{prod_id} --- 注文数：#{order_q}" %>
+  <% end %>
+
+  
+</div>
+
+<div class="cust_info">
   苗字:<%= @last_name %>
   名前:<%= @first_name %>
   苗字（カナ）:<%= @last_kana %>

@@ -1,5 +1,6 @@
 <div class="link-list">
-    
+
+　<% if !user_signed_in? %>
     <section>
        <%= link_to "登録して購入", new_user_registration_path, :class => "top-link" %>
     </section>
@@ -9,9 +10,13 @@
     <section>
        <%= link_to "ログイン", new_user_session_path, :class => "top-link" %>
     </section>
+  <% end %>
+　<% if user_signed_in? %>
     <section>
+       <%= link_to "購入", new_cart_path, :class => "top-link" %>
+    </section>    <section>
        <%= link_to "ログアウト", destroy_user_session_path, :method => "delete", :class => "top-link" %>
     </section>
-
+　<% end %>
 </div>
 
